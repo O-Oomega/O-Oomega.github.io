@@ -1,4 +1,4 @@
-[submodule "myHexoTheme-TKL"] 
-	path = themes/myHexoTheme-TKL 
+[submodule "myTKL"] 
+    path = themes/myTKL 
 	branch = main 
 	url = https://github.com/O-Oomega/myHexoTheme-TKL.git
