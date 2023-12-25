@@ -1,4 +1,4 @@
 [submodule "themes/TKL"]
 	path = themes/TKL
-	branch = master
-	url = https://github.com/SuperKieran/TKL.git
+	branch = main
+	url = https://github.com/O-Oomega/myHexoTheme-TKL.git
