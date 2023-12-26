@@ -7,7 +7,7 @@ tags:
 - 诗
 ---
 
-![img](/images/womenCountry.jpg)
+![img](/images/Poetry/womenCountry.jpg)
 
 **满园春色女儿情，袈裟白马志西行。**
 

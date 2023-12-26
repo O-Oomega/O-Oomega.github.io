@@ -9,7 +9,7 @@ tags:
 
 **You say no to life, and therefore you're not living. ----《好好先生》**
 
-![img](/images/yesman.jpg)
+![img](/images/Reaction/yesman.jpg)
 
 昨天看完的这部电影，还是挺有感触的。电影本身很轻松，内涵也不深刻，但想要传达的思想却很直观，贴近生活，贴近我这种自闭宅男的生活。
 
