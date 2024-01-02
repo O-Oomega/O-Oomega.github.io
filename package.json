@@ -22,7 +22,7 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-candelas": "^1.1.0",
-    "hexo-theme-keep": "^4.0.5",
+    "hexo-theme-keep": "^4.0.6",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-redefine": "^2.6.0"
   }
