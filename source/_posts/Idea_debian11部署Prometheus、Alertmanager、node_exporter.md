@@ -53,7 +53,12 @@ Type=simple
 User=prometheus  
 Group=prometheus  
 Restart=on-failure
-Execstart=/opt/prometheus/prometheus/prometheus  --config.file=/opt/prometheus/prometheus/prometheus.yml  --storage.tsdb.path=/opt/prometheus/prometheus/data  --storage.tsdb.retention.time=60d   --web.enable-lifecycle
+ExecStart=/opt/prometheus/prometheus/prometheus \
+  --config.file="/opt/prometheus/prometheus/prometheus.yml" \
+  --storage.tsdb.path="/opt/prometheus/prometheus/data" \
+  --storage.tsdb.retention.time="60d" \
+  --web.enable-lifecycle
+
 
 [Install]
 WantedBy=multi-user.target
@@ -250,33 +255,33 @@ vim /opt/prometheus/prometheus/prometheus.yml
 
 - 新增`prometheus`数据源
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5daa252337ac4cb9870d2119cee7093f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2558&h=686&s=94785&e=png&b=1a1d22)
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2a373f37c1f04d698a6df64d71196bc6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2217&h=738&s=95024&e=png&b=1f2227)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/新增数据源1.image)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/新增数据源2.image)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b47601b1f2414beea5a85677a098dc46~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=895&h=651&s=53554&e=png&b=181b1f)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/新增数据源3.image)
 
 保存即可
 
 ### `grafana`添加`node_exporter`仪表盘
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0cf73f2eddd24e9d90a8b541742aba73~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1717&h=507&s=71299&e=png&b=1a1d22)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘1.image)
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e7d201ecd664ed39859c3b2cd045301~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=983&h=551&s=59774&e=png&b=121318)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘2.image)
 
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4591a5f9ffd4bc283319e1000d292db~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=681&h=425&s=42035&e=png&b=171a1e)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘3.image)
 
 在新页面中，找到`node_exporter`，进入详情页，点击按钮复制ID
 
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/140291b991714fbab4fc7fc18ed406ea~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1375&h=890&s=205406&e=png&b=f6f6f6)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘4.image)
 
 返回`grafana`，在输入框中粘贴，然后点击Load按钮
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eb77a96b8f3e40a48c287d5a339eacb9~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=712&h=360&s=34121&e=png&b=181b1f)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘5.image)
 
 Name可自行修改，然后数据源选择刚刚创建的`prometheus`
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/482011e7b8a240b29ff70569106d679c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=823&h=615&s=62213&e=png&b=181b1f)
+![image.png](/images/Idea/debian11部署Prometheus、Alertmanager、node_exporter/添加仪表盘6.image)
 
 最后点击Import即可
