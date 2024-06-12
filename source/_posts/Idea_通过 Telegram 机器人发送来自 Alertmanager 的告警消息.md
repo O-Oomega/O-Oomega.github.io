@@ -35,13 +35,13 @@ tags:
 alertmanager-to-telegram/
 ├── Dockerfile
 ├── requirements.txt
-├── app.py
+├── alertmanager_to_telegram.py
 └── README.md
 ```
 
 ## 步骤
 
-### 1. 编写 `app.py`
+### 1. 编写 `alertmanager_to_telegram.py`
 
 这是告警机器人的主程序，使用 Flask 接收来自 Alertmanager 的 webhook 并调用 Telegram API 发送消息。
 
